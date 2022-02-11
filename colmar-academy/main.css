@@ -1,0 +1,105 @@
+/* turn text into icons */
+@media only screen and (max-width: 780px) {
+  body {
+  }
+
+  .nav-text,
+  .logo-text {
+    visibility: hidden;
+    position: absolute;
+  }
+  /* .campus-ic,
+  .online-ic,
+  .login-ic */
+  .nav {
+    visibility: visible;
+  }
+}
+
+/* turn icons into text */
+@media only screen and (min-width: 781px) {
+  body {
+  }
+  .logo-text {
+    visibility: visible;
+  }
+  .nav-text {
+    visibility: visible;
+    position: relative;
+    display: flex;
+  }
+  /* .campus-ic,
+  .online-ic,
+  .login-ic */
+  .nav {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+/* text-menu don't interupt the icons */
+
+/* logo-text */
+.logo-text {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.logo-text span {
+  color: gray;
+  font-weight: lighter;
+}
+
+/* custom default a link */
+.nav-text {
+  display: flex;
+  margin-top: 10px;
+}
+.nav-text li {
+  list-style: none;
+}
+.nav-text li a {
+  color: black;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+/* Showcase banner */
+
+.showcase-sect {
+  background-color: #d8d8d8;
+  margin-bottom: 32px;
+}
+.banner-card {
+}
+.banner-card,
+.banner-info-card {
+  background-color: #d8d8d8;
+  border: none;
+}
+.start-btn {
+  padding: 8px 20px;
+  width: 100%;
+  background-color: rgb(65, 62, 62);
+  border: none;
+}
+
+.card-link {
+  text-decoration: none;
+}
+.main-card {
+  border: none;
+}
+.child-card {
+  display: flex;
+  background-color: red;
+}
+.child-img {
+  width: 50%;
+  background-color: yellowgreen;
+}
+.child-card .card-body {
+  display: inline-block;
+}
