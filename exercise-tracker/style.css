@@ -1,0 +1,10 @@
+img {
+  width: 50px;
+}
+:root {
+  --sd: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg);
+}
+.filter-green {
+  filter: var(--sd);
+  width: 100px;
+}
