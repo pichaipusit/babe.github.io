@@ -4,89 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="style.css" />
-
-    <script
-      src="https://kit.fontawesome.com/70a2ec8691.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <title>Exerack</title>
+    <link rel="stylesheet" href="login-style.css" />
+    <title>Exerack Login</title>
   </head>
   <body>
-    <!-- Nav-menu -->
-    <nav>
-      <div class="navbar"></div>
-    </nav>
+    <div class="sub-body">
+      <!-- Login section -->
+      <section class="login-sect grid grid-2 container">
+        <!-- Banner -->
+        <main>
+          <div class="banner-info">
+            <img src="./img/dark-logo.svg" alt="" />
+            <h1>Exerack</h1>
+            <p>Change Your Active Life Style</p>
+          </div>
+          <img class="banner-main" src="img/login-banner.svg" alt="" />
+        </main>
 
-    <!-- Sign in -->
-    <section class="login-sect">
-      <main></main>
-      <footer></footer>
-    </section>
+        <!-- Form card -->
+        <div class="form-ctn">
+          <div class="card">
+            <form action="" class="">
+              <input type="email" id="email" name="email" placeholder="Email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Password"
+              />
+              <button class="login-main" type="submit">Login</button>
+              <div class="forget-ctn">
+                <p>forgot password?</p>
+                <p>new registry</p>
+              </div>
 
-    <!-- Activities -->
-    <section class="acts-sect">
-      <header></header>
-      <div class="acts-showcase">
-        <div class="acts-popular"></div>
-        <div class="acts-indoor"></div>
-        <div class="acts-outdoor"></div>
-      </div>
-    </section>
-
-    <!-- Create new activity Pop up-->
-    <span class="popup">
-      <div class="card"></div>
-    </span>
-
-    <!-- Home, Dashboard -->
-    <section class="home-sect">
-      <div class="profile-acts"></div>
-      <div class="profile-dashboard"></div>
-    </section>
-
-    <section class="history sect">
-      <button>View full history</button>
-    </section>
-
-    <!-- <div class="w3-content w3-display-container">
-      <img class="mySlides" src="./img/dark-logo.svg" style="width: 100%" />
-      <img class="mySlides" src="./img/light-logo.svg" style="width: 100%" />
-      <img class="mySlides" src="img/login-banner.svg" style="width: 100%" />
-      <img class="mySlides" src="img_forest.jpg" style="width: 100%" />
-
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">
-        &#10094;
-      </button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">
-        &#10095;
-      </button>
+              <button class="loginBtn loginBtn--facebook">
+                Login with Facebook
+              </button>
+              <button class="loginBtn loginBtn--google">
+                Login with Google
+              </button>
+              <a href="">go to the activities page</a>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
-
-    <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs((slideIndex += n));
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = x.length;
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-      }
-    </script> -->
   </body>
 </html>

@@ -1,10 +1,130 @@
-img {
-  width: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 :root {
-  --sd: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg);
+  --dark-orange: #e63824;
+  --dark-cream: #e0866e;
+  --light-gray: #d7d4d2;
+  --text-gray: rgb(161, 159, 159);
+  --bg-color: linear-gradient(0deg, rgb(17, 20, 36), rgb(26, 35, 59));
 }
-.filter-green {
-  filter: var(--sd);
-  width: 100px;
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--text-gray);
+}
+.grid {
+}
+.flex {
+  display: flex;
+  /* background-color: yellow; */
+}
+.card {
+}
+.container {
+  /* background-color: red; */
+  max-width: 1100px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.sub-body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(0deg, rgb(17, 20, 36), rgb(26, 35, 59));
+}
+/* End set variables */
+
+.invert-icon {
+  filter: invert(82%) sepia(2%) saturate(317%) hue-rotate(350deg)
+    brightness(103%) contrast(96%);
+
+  display: block;
+}
+.invert-bell {
+  filter: invert(82%) sepia(2%) saturate(317%) hue-rotate(350deg)
+    brightness(103%) contrast(96%);
+}
+
+/* Nav */
+.navbar {
+  align-items: center;
+  height: 60px;
+  margin-top: 10px;
+}
+.nav-logo {
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo img {
+  width: 52px;
+}
+.nav {
+  align-items: center;
+  margin-left: auto;
+}
+.logo-text {
+  color: var(--dark-orange);
+}
+.nav h3,
+.logo-text {
+  display: none;
+}
+.ic-size {
+  width: 35px;
+}
+nav li {
+  /* background-color: pink; */
+  margin-right: 0px;
+}
+/* position navbar on mobile */
+.nav-pos {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.ic-bell {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+/* Hover nav menu */
+nav a:hover {
+  color: rgb(255, 123, 0);
+}
+.invert-icon:hover,
+.invert-bell:hover {
+  filter: invert(49%) sepia(80%) saturate(2011%) hue-rotate(1deg)
+    brightness(101%) contrast(107%);
+}
+
+/* For desktop screen */
+@media screen and (min-width: 700px) {
+  .nav h3,
+  .logo-text {
+    display: block;
+  }
+  .invert-icon {
+    display: none;
+  }
+  /* change nav to bottom */
+  .nav-pos {
+    position: relative;
+    justify-content: end;
+  }
+  .nav li {
+    margin-right: 2em;
+  }
+  .ic-bell {
+    position: relative;
+    top: 0;
+    right: 10px;
+  }
 }
